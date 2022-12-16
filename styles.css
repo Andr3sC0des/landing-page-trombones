@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  top: 0;
+}
+.navbar__logo {
+  max-width: 400px;
+  display: block;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+.menu__anchor {
+  color: #000;
+  display: block;
+  text-decoration: none;
+  padding: 2rem;
+  font-size: 1.5rem;
+}
+
+.start {
+  margin-top: 8rem;
+}
+.start__title {
+  text-align: center;
+  font-size: 2rem;
+}
+.start__form {
+  margin-top: 2rem;
+  padding: 1rem;
+}
+.start__input {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 300px;
+  border-radius: 1rem;
+  height: 40px;
+  border: 1px solid #999;
+  padding-left: 1rem;
+  font-size: 1.1rem;
+}
+.start__button {
+  margin-top: 1rem;
+  background: #2e2e2e;
+  color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding: 0rem 1rem;
+  height: 40px;
+  border: none;
+  border-radius: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.card {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.2rem;
+}
+.card__icon {
+  font-size: 5rem;
+  display: block;
+  width: 120px;
+}
+.card__paragraph {
+  max-width: 500px;
+  margin-top: 1rem;
+  line-height: 1.5rem;
+}
+
+.video {
+  display: block;
+  margin: 4rem auto;
+}
+
+.prices {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  padding: 2rem;
+}
+.prices__card {
+  max-width: 350px;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  box-shadow: 5px 5px 5px 5px #999;
+}
+.prices__title {
+  color: #fff;
+  background: #2e2e2e;
+  padding: 1rem 4rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+.prices__price {
+  display: block;
+  font-size: 1.5rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  border: 2px solid #2e2e2e;
+  background: #2e2e2e;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.5rem 3rem;
+  color: #fff;
+}
+.prices__price:hover {
+  border: 2px solid #2e2e2e;
+  background: #fff;
+  color: #2e2e2e;
+}
+.prices__details {
+  padding: 1rem;
+}
+.prices__list {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  list-style-type: none;
+  text-align: center;
+}
+.prices__listitem {
+  margin-top: 0.5rem;
+}
+.prices__button {
+  background: #2e2e2e;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 5rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 2rem;
+}
+
+.footer {
+  background: #2e2e2e;
+  padding: 2rem;
+}
+.footer__menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__menuitem {
+  list-style-type: none;
+}
+.footer__menuanchor {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  display: block;
+  padding: 0.5rem 1rem;
+}
+.footer__copyright {
+  color: #fff;
+  text-align: center;
+  display: block;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 868px) {
+  .navbar {
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+  .navbar__logo {
+    margin-top: 1rem;
+    width: 100%;
+  }
+  .start__title {
+    margin-top: 12rem;
+  }
+  .cards {
+    padding: 3rem;
+  }
+  .prices {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 756px) {
+  .card {
+    gap: 4rem;
+  }
+  .video {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 488px) {
+  .menu__anchor {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+  .cards {
+    padding: 1rem;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
